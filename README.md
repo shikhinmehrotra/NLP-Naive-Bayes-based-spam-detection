@@ -13,6 +13,12 @@ A custom preprocessing function is written which comprises of the following step
 
 This fucntion returns a list of preprocessed words.
 
-# Feature creation
+# Feature creation and data preparation
 The features for each document in the data set are the unique words present in all the documents of the data set.
-A custom function to extract all the unique words from the data set is built.
+A custom function to extract all the unique words from the data set is built. The dataset is subsequently divided into training and test data in the ratio of 80:20. The features as described above are extracted from the training and test data sets.
+
+# Model building
+NLTK's NaiveBayesClassifier() class is used to train a Naive Bayes model on the training data set.
+
+# Model evaluation
+The Naive Bayes classifier gives an accuracy of 98.3%.
